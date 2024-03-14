@@ -9,14 +9,36 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size)
+{ 
+    int mayor = arr[0];
+    for(int i = 1 ; i < size ; i++)
+      {
+        if(arr[i] > mayor)
+        {
+          mayor = arr[i];
+        }
+      }
+  return mayor;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) 
+{
+  int mitad = size / 2;
+  int pos = size - 1;
+  for (int i = 0; i < mitad; i++)
+    {
+      int temp = arr[pos];
+      arr[pos] = arr[i];
+      arr[i] = temp;
+      pos--;
+    }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -24,7 +46,22 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *n_size) 
+{ 
+  int *n_arr;
+  int *size_ptr = n_size;
+  n_arr = (int *) malloc(sizeof(int *));
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] % 2 == 0)
+      {
+        *size_ptr += 1;
+        n_arr = (int *) realloc(n_arr, sizeof(int *) * (*size_ptr));
+        n_arr[*size_ptr - 1] = arr[i]; //lo subi y lo baje
+      }
+    }
+  return n_arr; 
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -33,7 +70,10 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  //int n_
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
