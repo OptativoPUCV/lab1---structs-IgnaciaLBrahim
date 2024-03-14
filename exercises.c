@@ -46,17 +46,17 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *n_size) 
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
 { 
-  *n_size = 0;
+  *newSize = 0;
   int *n_arr;
   n_arr = malloc(sizeof(int) * (size));
   for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        n_arr[(*n_size)] = arr[i]; //lo subi y lo baje
-        (*n_size)++;
+        n_arr[(*newSize)] = arr[i]; //lo subi y lo baje
+        (*newSize)++;
       }
     }
   return n_arr; 
