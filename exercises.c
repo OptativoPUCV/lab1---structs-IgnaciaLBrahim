@@ -50,7 +50,7 @@ int *filterEvenNumbers(int arr[], int size, int *n_size)
 { 
   int *n_arr;
   int *size_ptr = n_size;
-  n_arr = (int) malloc(sizeof(int) * (size));
+  n_arr = int malloc(sizeof(int) * (size));
   for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)

@@ -34,3 +34,13 @@ exercises.c:53:9: error: assignment to ‘int *’ from ‘int’ makes pointer 
 cc1: all warnings being treated as errors
 Compilation failed
 c389934
+Thu 14 Mar 2024 09:01:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:11: error: expected expression before ‘int’
+   53 |   n_arr = int malloc(sizeof(int) * (size));
+      |           ^~~
+Compilation failed
+9f31a7a
