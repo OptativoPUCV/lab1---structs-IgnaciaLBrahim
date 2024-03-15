@@ -104,3 +104,9 @@ exercises.c:74:7: error: unused variable ‘new_size’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 e3f9a01
+Fri 15 Mar 2024 12:23:50 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+6ce0b17
