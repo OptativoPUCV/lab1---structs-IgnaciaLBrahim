@@ -167,3 +167,16 @@ Fri 15 Mar 2024 12:53:35 AM UTC:
  tests:  0|2
 total_score: 50/70
 d5edbd8
+Fri 15 Mar 2024 01:06:35 AM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:175:22: error: invalid type argument of ‘->’ (have ‘Autor’)
+  175 |   strcpy(libro->autor->nombre, nombreAutor);
+      |                      ^~
+exercises.c:176:15: error: invalid type argument of ‘->’ (have ‘Autor’)
+  176 |   libro->autor->anioNacimiento = anioNacimiento;
+      |               ^~
+Compilation failed
+b4f7936
