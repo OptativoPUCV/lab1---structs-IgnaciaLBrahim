@@ -191,3 +191,9 @@ exercises.c:175:15: error: ‘libro’ is a pointer; did you mean to use ‘->�
       |               ->
 Compilation failed
 6e37601
+Fri 15 Mar 2024 01:07:24 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+8ed30fc
