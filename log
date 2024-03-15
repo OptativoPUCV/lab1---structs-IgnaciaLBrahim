@@ -76,3 +76,20 @@ Thu 14 Mar 2024 09:06:18 PM UTC:
  tests:  0|4
 total_score: 30/70
 4154c21
+Fri 15 Mar 2024 12:23:12 AM UTC: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:28: error: expected ‘;’ before ‘i’
+   94 |         result[k] = arr2[j]
+      |                            ^
+      |                            ;
+   95 |         i++;
+      |         ~                   
+exercises.c:74:7: error: unused variable ‘new_size’ [-Werror=unused-variable]
+   74 |   int new_size = size1 + size2;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+75ed5b5
