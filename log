@@ -93,3 +93,14 @@ exercises.c:74:7: error: unused variable ‘new_size’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 75ed5b5
+Fri 15 Mar 2024 12:23:22 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:74:7: error: unused variable ‘new_size’ [-Werror=unused-variable]
+   74 |   int new_size = size1 + size2;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e3f9a01
